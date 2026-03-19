@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Inscription</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="top_container ">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="accueil.html">
+            <span>
+              ÉduFuture
+            </span>
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link" href="accueil.html"> Accueil </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="connaitre.html"> Nous Connaitre </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="formation.html"> Formation </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="inscription.html">Inscription</a>
+                </li>
+               
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Nous Contacter</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!-- end header section -->
+
+  <!-- inscription section -->
+  <section class="contact_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="d-flex justify-content-center d-md-block">
+            <h2>Inscription aux formations</h2>
+          </div>
+          <form action="inscription.php" method="POST">
+            <div class="contact_form-container">
+              <div>
+                <div>
+                  <input type="text" name="nom" placeholder="Nom" required>
+                </div>
+                <div>
+                  <input type="text" name="prenom" placeholder="Prénom" required>
+                </div>
+                <div>
+                  <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                  <input type="text" name="telephone" placeholder="Numéro de téléphone" required>
+                </div>
+                <div class="mt-5">
+                  <label for="dateNaissance">Date de Naissance</label>
+                  <input type="date" id="dateNaissance" name="dateNaissance" required>
+                </div>
+                <div class="mt-5">
+                  <label for="adresse">Adresse</label>
+                  <input type="text" name="adresse" placeholder="Adresse complète" required>
+                </div>
+                <div class="mt-5">
+                  <label for="formation">Formation souhaitée</label>
+                  <select name="formation" id="formation" required>
+                    <option value="">Sélectionnez une formation</option>
+                    <option value="informatique">Informatique & Technologie</option>
+                    <option value="sciences">Sciences & Ingénierie</option>
+                    <option value="business">Business & Management</option>
+                    <option value="arts">Arts & Humanités</option>
+                  </select>
+                </div>
+                <div class="mt-5">
+                  <label for="niveau">Niveau d'études</label>
+                  <select name="niveau" id="niveau" required>
+                    <option value="">Sélectionnez votre niveau</option>
+                    <option value="bac">Baccalauréat</option>
+                    <option value="bac+2">Bac+2</option>
+                    <option value="bac+3">Bac+3</option>
+                    <option value="bac+5">Bac+5 ou plus</option>
+                  </select>
+                </div>
+                <div class="mt-5">
+                  <label for="motivation">Lettre de Motivation</label>
+                  <textarea name="motivation" id="motivation" rows="5" placeholder="Décrivez brièvement votre motivation pour cette formation" required></textarea>
+                </div>
+                <div class="mt-5">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="conditions" name="conditions" required>
+                    <label class="form-check-label" for="conditions">
+                      J'accepte les conditions générales et la politique de confidentialité
+                    </label>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <button type="submit">Valider l'inscription</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <div class="about_detail-box mt-5">
+            <h3>Informations importantes</h3>
+            <p>
+              L'inscription aux formations d'ÉduFutur se déroule en deux étapes :
+            </p>
+            <ol>
+              <li>Compléter le formulaire d'inscription avec vos informations personnelles</li>
+              <li>Procéder au paiement des frais d'inscription</li>
+            </ol>
+            <p>
+              Une fois votre inscription validée, vous recevrez un email de confirmation avec toutes les informations
+              nécessaires pour débuter votre formation.
+            </p>
+            <p>
+              Pour toute question, n'hésitez pas à <a href="contact.html">nous contacter</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end inscription section -->
+
+  <!-- footer -->
+  <section class="info_section layout_padding-top">
+    <div class="info_logo-box">
+      <h2>
+        ÉduFutur
+      </h2>
+    </div>
+    <div class="container layout_padding2">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>
+            A propos
+          </h5>
+          <p>
+            Nous sommes une institution dédiée à l'excellence éducative, où chaque élève trouve les ressources et le
+            soutien nécessaires pour s'épanouir. Situés au cœur de la ville, notre campus moderne et accueillant est
+            facilement accessible en transport en commun ou en voiture.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5>
+            Contacter Nous
+          </h5>
+          <ul>
+            <li>
+              <a>
+                12 Rue de l'Éducation, 75005 Paris, France
+              </a>
+            </li>
+            <li>
+              <a>
+                Tél: +33 1 23 45 67 89
+              </a>
+            </li>
+            <li>
+              <a>
+                contact.edufuture@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <div class="subscribe_container">
+            <div class="flex-column">
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="images/fb.png" alt="">
+              </a>
+
+              <a href="https://x.com" target="_blank">
+                <img src="images/twitter.png" alt="">
+              </a>
+
+              <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
